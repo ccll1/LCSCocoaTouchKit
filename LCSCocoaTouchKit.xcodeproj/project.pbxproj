@@ -8,7 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		59D70CB019A37E6C0048B517 /* LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CAF19A37E6C0048B517 /* LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59D70CBA19A37E6D0048B517 /* LCSCocoaTouchKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CB919A37E6D0048B517 /* LCSCocoaTouchKitTests.m */; };
+		59D70CCF19A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CC319A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D70CD019A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC419A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m */; };
+		59D70CD119A37EA30048B517 /* UIButton+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CC519A37EA30048B517 /* UIButton+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D70CD219A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC619A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m */; };
+		59D70CD319A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CC719A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D70CD419A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC819A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m */; };
+		59D70CD519A37EA30048B517 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CC919A37EA30048B517 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D70CD619A37EA30048B517 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */; };
+		59D70CD719A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CCB19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D70CD819A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */; };
+		59D70CD919A37EA30048B517 /* UIView+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CCD19A37EA30048B517 /* UIView+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D70CDA19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCE19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m */; };
+		59D70CDC19A37F580048B517 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D70CDB19A37F580048B517 /* UIKit.framework */; };
+		59ED565D19A4853600ED1971 /* UIBezierPath+LCSCocoaTouchKit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59ED565C19A4853600ED1971 /* UIBezierPath+LCSCocoaTouchKit_Tests.m */; };
+		59ED565E19A486D400ED1971 /* UIBezierPath+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC419A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m */; };
+		59ED565F19A486D400ED1971 /* UIButton+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC619A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m */; };
+		59ED566019A486D400ED1971 /* UIColor+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC819A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m */; };
+		59ED566119A486D400ED1971 /* UILabel+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */; };
+		59ED566219A486D400ED1971 /* UIView+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCE19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m */; };
+		59ED566319A486D400ED1971 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +36,20 @@
 		59D70CAF19A37E6C0048B517 /* LCSCocoaTouchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSCocoaTouchKit.h; sourceTree = "<group>"; };
 		59D70CB519A37E6D0048B517 /* LCSCocoaTouchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCSCocoaTouchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D70CB819A37E6D0048B517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59D70CB919A37E6D0048B517 /* LCSCocoaTouchKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSCocoaTouchKitTests.m; sourceTree = "<group>"; };
+		59D70CC319A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
+		59D70CC419A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
+		59D70CC519A37EA30048B517 /* UIButton+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
+		59D70CC619A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
+		59D70CC719A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
+		59D70CC819A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
+		59D70CC919A37EA30048B517 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		59D70CCB19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
+		59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
+		59D70CCD19A37EA30048B517 /* UIView+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
+		59D70CCE19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
+		59D70CDB19A37F580048B517 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		59ED565C19A4853600ED1971 /* UIBezierPath+LCSCocoaTouchKit_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LCSCocoaTouchKit_Tests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D70CDC19A37F580048B517 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +93,20 @@
 			isa = PBXGroup;
 			children = (
 				59D70CAF19A37E6C0048B517 /* LCSCocoaTouchKit.h */,
+				59D70CC319A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h */,
+				59D70CC419A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m */,
+				59D70CC519A37EA30048B517 /* UIButton+LCSCocoaTouchKit.h */,
+				59D70CC619A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m */,
+				59D70CC719A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h */,
+				59D70CC819A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m */,
+				59D70CCB19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h */,
+				59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */,
+				59D70CCD19A37EA30048B517 /* UIView+LCSCocoaTouchKit.h */,
+				59D70CCE19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m */,
+				59D70CC919A37EA30048B517 /* UIImage+ImageEffects.h */,
+				59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */,
 				59D70CAD19A37E6C0048B517 /* Supporting Files */,
+				59D70CDD19A37F610048B517 /* Frameworks */,
 			);
 			path = LCSCocoaTouchKit;
 			sourceTree = "<group>";
@@ -76,7 +122,7 @@
 		59D70CB619A37E6D0048B517 /* LCSCocoaTouchKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				59D70CB919A37E6D0048B517 /* LCSCocoaTouchKitTests.m */,
+				59ED565C19A4853600ED1971 /* UIBezierPath+LCSCocoaTouchKit_Tests.m */,
 				59D70CB719A37E6D0048B517 /* Supporting Files */,
 			);
 			path = LCSCocoaTouchKitTests;
@@ -90,6 +136,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		59D70CDD19A37F610048B517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59D70CDB19A37F580048B517 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -97,7 +151,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D70CD719A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h in Headers */,
+				59D70CD919A37EA30048B517 /* UIView+LCSCocoaTouchKit.h in Headers */,
+				59D70CCF19A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h in Headers */,
+				59D70CD519A37EA30048B517 /* UIImage+ImageEffects.h in Headers */,
 				59D70CB019A37E6C0048B517 /* LCSCocoaTouchKit.h in Headers */,
+				59D70CD319A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h in Headers */,
+				59D70CD119A37EA30048B517 /* UIButton+LCSCocoaTouchKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D70CD619A37EA30048B517 /* UIImage+ImageEffects.m in Sources */,
+				59D70CD219A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m in Sources */,
+				59D70CD419A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m in Sources */,
+				59D70CDA19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m in Sources */,
+				59D70CD019A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m in Sources */,
+				59D70CD819A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D70CBA19A37E6D0048B517 /* LCSCocoaTouchKitTests.m in Sources */,
+				59ED566319A486D400ED1971 /* UIImage+ImageEffects.m in Sources */,
+				59ED566019A486D400ED1971 /* UIColor+LCSCocoaTouchKit.m in Sources */,
+				59ED566219A486D400ED1971 /* UIView+LCSCocoaTouchKit.m in Sources */,
+				59ED565F19A486D400ED1971 /* UIButton+LCSCocoaTouchKit.m in Sources */,
+				59ED565E19A486D400ED1971 /* UIBezierPath+LCSCocoaTouchKit.m in Sources */,
+				59ED566119A486D400ED1971 /* UILabel+LCSCocoaTouchKit.m in Sources */,
+				59ED565D19A4853600ED1971 /* UIBezierPath+LCSCocoaTouchKit_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +445,7 @@
 				59D70CBF19A37E6D0048B517 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59D70CC019A37E6D0048B517 /* Build configuration list for PBXNativeTarget "LCSCocoaTouchKitTests" */ = {
 			isa = XCConfigurationList;
@@ -381,6 +454,7 @@
 				59D70CC219A37E6D0048B517 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,14 @@
 //
-//  UILabel+FontAppearance.m
-//  Minimal Sudoku
+//  UILabel+LCSCocoaTouchKit.m
+//  LCSCocoaTouchKit
 //
 //  Created by Christoph Lauterbach on 09.03.14.
 //  Copyright (c) 2014 Christoph Lauterbach. All rights reserved.
 //
 
-#import "UILabel+FontAppearance.h"
+#import "UILabel+LCSCocoaTouchKit.h"
 
-@implementation UILabel (FontAppearance)
+@implementation UILabel (LCSCocoaTouchKit)
 
 - (void)setAppearanceFont:(UIFont*)font
 {
@@ -22,7 +22,7 @@
 
 - (UIFont*)appearanceFont
 {
-    return [self font];
+    return self.font;
 }
 
 @end

@@ -14,6 +14,12 @@ FOUNDATION_EXPORT double LCSCocoaTouchKitVersionNumber;
 //! Project version string for LCSCocoaTouchKit.
 FOUNDATION_EXPORT const unsigned char LCSCocoaTouchKitVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <LCSCocoaTouchKit/PublicHeader.h>
+#import "UIBezierPath+LCSCocoaTouchKit.h"
+#import "UIButton+LCSCocoaTouchKit.h"
+#import "UIColor+LCSCocoaTouchKit.h"
+#import "UIImage+ImageEffects.h"
+#import "UILabel+LCSCocoaTouchKit.h"
+#import "UIView+LCSCocoaTouchKit.h"
+
 
 

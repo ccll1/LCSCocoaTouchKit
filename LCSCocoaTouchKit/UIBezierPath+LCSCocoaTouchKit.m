@@ -1,124 +1,14 @@
 //
 //  UIBezierPath+ConenvienceAdditions.m
-//  Minimal Sudoku
+//  LCSCocoaTouchKit
 //
 //  Created by Christoph Lauterbach on 12.02.14.
 //  Copyright (c) 2014 Christoph Lauterbach. All rights reserved.
 //
 
-#import "UIBezierPath+ConenvienceAdditions.h"
+#import "UIBezierPath+LCSCocoaTouchKit.h"
 
-@implementation UIBezierPath (ConenvienceAdditions)
-
-+ (UIBezierPath*)histogramPathFromBinHeights:(CGFloat*)binHeights binCount:(NSUInteger)binCount closed:(BOOL)closed
-{
-    if (binCount < 3) {
-        return nil;
-    }
-    
-    CGFloat x;
-    CGFloat y;
-    
-    CGFloat cp1x;
-    CGFloat cp1y;
-    CGFloat cp2x;
-    CGFloat cp2y;
-    
-    CGFloat cpLengthFactor = 0.3;
-    
-    CGFloat *xPoints = malloc(sizeof(CGFloat) * (binCount + 2));
-    CGFloat *yPoints = malloc(sizeof(CGFloat) * (binCount + 2));
-    CGFloat *cp1xPoints = malloc(sizeof(CGFloat) * (binCount + 2));
-    CGFloat *cp1yPoints = malloc(sizeof(CGFloat) * (binCount + 2));
-    CGFloat *cp2xPoints = malloc(sizeof(CGFloat) * (binCount + 2));
-    CGFloat *cp2yPoints = malloc(sizeof(CGFloat) * (binCount + 2));
-    
-    xPoints[0] = 0.0;
-    yPoints[0] = 0.0;
-    
-    for (NSUInteger binIdx = 0; binIdx < binCount; binIdx++) {
-        x = (CGFloat)binIdx + 0.5;
-        y = binHeights[binIdx];
-        xPoints[binIdx+1] = x;
-        yPoints[binIdx+1] = y;
-    }
-    
-    xPoints[binCount+1] = (CGFloat)(binCount);
-    yPoints[binCount+1] = 0.0;
-    
-    cp1xPoints[1] = xPoints[0];
-    cp1yPoints[1] = yPoints[0];
-    
-    for (NSUInteger binIdx = 1; binIdx < binCount+1; binIdx++) {
-        x = xPoints[binIdx];
-        y = yPoints[binIdx];
-        
-        CGFloat yDiff_2 = (yPoints[binIdx+1] - yPoints[binIdx-1]) / 2.0;
-        
-        if (yPoints[binIdx-1] <= y && yPoints[binIdx+1] >= y) {
-            // Rising
-            cp1y = y - (yDiff_2 * cpLengthFactor);
-            cp2y = y + (yDiff_2 * cpLengthFactor);
-        }
-        else if (yPoints[binIdx-1] >= y && yPoints[binIdx+1] <= y) {
-            // Falling
-            cp1y = y + (-yDiff_2 * cpLengthFactor);
-            cp2y = y - (-yDiff_2 * cpLengthFactor);
-        }
-        else {
-            cp1y = y;
-            cp2y = y;
-        }
-        
-        cp1y = MAX(cp1y, 0.0);
-        cp2y = MAX(cp2y, 0.0);
-        
-        cp1x = x - cpLengthFactor;
-        cp2x = x + cpLengthFactor;
-        
-        cp2xPoints[binIdx] = cp1x;
-        cp2yPoints[binIdx] = cp1y;
-        
-        cp1xPoints[binIdx+1] = cp2x;
-        cp1yPoints[binIdx+1] = cp2y;
-    }
-    
-    cp2xPoints[binCount+1] = xPoints[binCount+1];
-    cp2yPoints[binCount+1] = yPoints[binCount+1];
-    
-    UIBezierPath *path = [UIBezierPath new];
-    [path moveToPoint:CGPointMake(0.0, 0.0)];
-    
-    x = xPoints[0];
-    y = yPoints[0];
-    [path addLineToPoint:CGPointMake(x, y)];
-    
-    for (NSUInteger binIdx = 1; binIdx < binCount+2; binIdx++) {
-        x = xPoints[binIdx];
-        y = yPoints[binIdx];
-        
-        cp1x = cp1xPoints[binIdx];
-        cp1y = cp1yPoints[binIdx];
-        cp2x = cp2xPoints[binIdx];
-        cp2y = cp2yPoints[binIdx];
-        
-        [path addCurveToPoint:CGPointMake(x, y) controlPoint1:CGPointMake(cp1x, cp1y) controlPoint2:CGPointMake(cp2x, cp2y)];
-    }
-    
-    if (closed) {
-        [path closePath];
-    }
-    
-    free(xPoints);
-    free(yPoints);
-    
-    free(cp1xPoints);
-    free(cp1yPoints);
-    free(cp2xPoints);
-    free(cp2yPoints);
-    
-    return path;
-}
+@implementation UIBezierPath (LCSCocoaTouchKit)
 
 + (UIBezierPath*)pathWithPoints:(NSArray*)points closed:(BOOL)closed
 {
@@ -325,7 +215,7 @@ void approximatePathSegment(CGPoint p0,
                             CGFloat maxLineLength,
                             NSMutableArray *points)
 {
-    CGFloat distance = distanceBetweenPoints(pt0, pt1);
+    CGFloat distance = sqrt(pow(pt0.x - pt1.x, 2.0) + pow(pt0.y - pt1.y, 2.0));
     CGFloat t05 = (t0 + t1) / 2.0;
     
     if (distance <= maxLineLength) {
@@ -368,11 +258,6 @@ CGPoint pointOnCurve(CGPoint p0, CGPoint cp0, CGPoint cp1, CGPoint p1, CGFloat t
     return p;
 }
 
-CGFloat distanceBetweenPoints(CGPoint p0, CGPoint p1)
-{
-    return sqrt(pow(p0.x - p1.x, 2.0) + pow(p0.y - p1.y, 2.0));
-}
-
 - (NSArray*)allPoints
 {
     NSMutableArray *points = [NSMutableArray new];
@@ -407,95 +292,17 @@ void cgAllPointsOnPathApplierFunc(void *info, const CGPathElement *element)
     }
 }
 
-- (CGFloat)assumeHistogramPathFindHeightAtX:(CGFloat)x maxLineLength:(CGFloat)maxLineLength
+- (BOOL)isEqual:(id)anObject
 {
-    NSDictionary *infoDict = @{@"x": @(x), @"maxLineLength": @(maxLineLength)};
+    if (self == anObject)
+        return YES;
+    if (![anObject isKindOfClass: [UIBezierPath class]])
+        return NO;
     
-    CGPathRef pathCG = self.CGPath;
+    CGPathRef path = self.CGPath;
+    CGPathRef otherPath = [anObject CGPath];
     
-    findPathHeightAtXLastPoint = CGPointZero;
-    findPathHeightAtX_y = FLT_MIN;
-    CGPathApply(pathCG, (__bridge void *)(infoDict), cgFindPathHeightAtXApplierFunc);
-    
-    CGFloat y = findPathHeightAtX_y;
-    
-    findPathHeightAtXLastPoint = CGPointZero;
-    findPathHeightAtX_y = FLT_MIN;
-    
-    return y;
-}
-
-static CGFloat findPathHeightAtX_y;
-static CGPoint findPathHeightAtXLastPoint;
-
-void cgFindPathHeightAtXApplierFunc(void *info, const CGPathElement *element)
-{
-    NSDictionary *infoDict = (__bridge NSDictionary *)info;
-    CGFloat x = [infoDict[@"x"] doubleValue];
-    CGFloat maxLineLength = [infoDict[@"maxLineLength"] doubleValue];
-    
-    CGPoint *elementPoints = element->points;
-    CGPathElementType type = element->type;
-    
-    if (type == kCGPathElementMoveToPoint) {
-        findPathHeightAtXLastPoint = elementPoints[0];
-    }
-    else if (type == kCGPathElementAddLineToPoint) {
-        if (findPathHeightAtXLastPoint.x <= x && elementPoints[0].x >= x) {
-            findPathHeightAtX_y = interpolateYForXBetweenPoints(findPathHeightAtXLastPoint, elementPoints[0], x);
-        }
-        
-        findPathHeightAtXLastPoint = elementPoints[0];
-    }
-    else if (type == kCGPathElementCloseSubpath) {
-        findPathHeightAtXLastPoint = CGPointZero;
-    }
-    else {
-        CGPoint p0 = findPathHeightAtXLastPoint;
-        CGPoint cp0;
-        CGPoint cp1;
-        CGPoint p1;
-        
-        if (type == kCGPathElementAddQuadCurveToPoint) {
-            cp0 = elementPoints[0];
-            cp1 = elementPoints[0];
-            p1 = elementPoints[1];
-        }
-        else {
-            cp0 = elementPoints[0];
-            cp1 = elementPoints[1];
-            p1 = elementPoints[2];
-        }
-        
-        if (p0.x <= x && p1.x >= x) {
-            NSMutableArray *newPoints = [NSMutableArray new];
-            
-            approximatePathSegment(p0, cp0, cp1, p1, p0, 0.0, p1, 1.0, maxLineLength, newPoints);
-            
-            for (NSUInteger i = 0; i < newPoints.count - 1; i++) {
-                p0 = [newPoints[i] CGPointValue];
-                p1 = [newPoints[i+1] CGPointValue];
-                
-                if (p0.x <= x && p1.x >= x) {
-                    findPathHeightAtX_y = interpolateYForXBetweenPoints(p0, p1, x);
-                }
-            }
-        }
-        
-        findPathHeightAtXLastPoint = p1;
-    }
-}
-
-CGFloat interpolateYForXBetweenPoints(CGPoint p0, CGPoint p1, CGFloat x)
-{
-    if (p0.x == p1.x) {
-        return (p0.y + p1.y) / 2.0;
-    }
-    
-    CGFloat xFactor = (x - p0.x) / (p1.x - p0.x);
-    CGFloat yDiff = p1.y - p0.y;
-    
-    return p0.y + xFactor * yDiff;
+    return CGPathEqualToPath(path, otherPath);
 }
 
 @end

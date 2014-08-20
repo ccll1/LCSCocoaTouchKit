@@ -1,14 +1,14 @@
 //
-//  UIButton+LcAdditions.m
-//  Minimal Sudoku
+//  UIButton+LCSCocoaTouchKit.m
+//  LCSCocoaTouchKit
 //
 //  Created by Christoph Lauterbach on 12.03.14.
 //  Copyright (c) 2014 Christoph Lauterbach. All rights reserved.
 //
 
-#import "UIButton+LcAdditions.h"
+#import "UIButton+LCSCocoaTouchKit.h"
 
-@implementation UIButton (LcAdditions)
+@implementation UIButton (LCSCocoaTouchKit)
 
 - (void)useTintedImage
 {

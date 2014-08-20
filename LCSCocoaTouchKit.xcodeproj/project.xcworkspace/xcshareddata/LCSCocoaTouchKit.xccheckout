@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D6A0CC8E-9CB6-4706-9263-2ED00C260D6F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LCSCocoaTouchKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>11DF7B560400B386D30604C153F8CCDA5C5C6174</key>
+		<string>github.com:ccll1/LCSFoundationKit.git</string>
+		<key>27CA6B4AB806AC703C6CFFDA5B15704552CE3D32</key>
+		<string>github.com:ccll1/MinimalSudoku.git</string>
+		<key>464352D7AD7665D0FFC4D8E353AB745F841B6F5F</key>
+		<string>github.com:ccll1/LCSCocoaTouchKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LCSCocoaTouchKit/LCSCocoaTouchKit.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>11DF7B560400B386D30604C153F8CCDA5C5C6174</key>
+		<string>../../../../LCSFoundationKit</string>
+		<key>27CA6B4AB806AC703C6CFFDA5B15704552CE3D32</key>
+		<string>../../../../MinimalSudoku</string>
+		<key>464352D7AD7665D0FFC4D8E353AB745F841B6F5F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:ccll1/LCSCocoaTouchKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>464352D7AD7665D0FFC4D8E353AB745F841B6F5F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>464352D7AD7665D0FFC4D8E353AB745F841B6F5F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LCSCocoaTouchKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>11DF7B560400B386D30604C153F8CCDA5C5C6174</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LCSFoundationKit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>27CA6B4AB806AC703C6CFFDA5B15704552CE3D32</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MinimalSudoku</string>
+		</dict>
+	</array>
+</dict>
+</plist>

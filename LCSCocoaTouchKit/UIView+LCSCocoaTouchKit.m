@@ -1,55 +1,30 @@
 //
-//  UIView+BlurredImage.m
-//  Minimal Sudoku
+//  UIView+LCSCocoaTouchKit.m
+//  LCSCocoaTouchKit
 //
 //  Created by Christoph Lauterbach on 12.12.13.
 //  Copyright (c) 2013 Christoph Lauterbach. All rights reserved.
 //
 
-#import "UIView+BlurredImage.h"
+#import "UIView+LCSCocoaTouchKit.h"
 #import "UIImage+ImageEffects.h"
 
-#import "BNRTimeBlock.h"
+@implementation UIView (LCSCocoaTouchKit)
 
-#import "LcAppDelegate+Appearance.h"
-
-#import "LcAppDelegate+BundleAndDeviceInfo.h"
-
-@implementation UIView (BlurredImage)
-
-- (UIImage*)blurredImage
+- (UIImage*)blurredImageWithTintColor:(UIColor*)tintColor blurRadius:(CGFloat)blurRadius
 {
-    if ([self window] == nil) {
+    if (self.window == nil) {
         return nil;
     }
     
     UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, [[[self window] screen] scale]);
     [self drawViewHierarchyInRect:self.frame afterScreenUpdates:NO];
-    UIImage *newBGImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    UIColor *tintColor;
+    image = [image applyBlurWithRadius:blurRadius tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
     
-    if ([LcAppDelegate sharedAppDelegate].interfaceColorMode == LcInterfaceColorModeLight) {
-        tintColor = [UIColor colorWithWhite:0.97 alpha:0.82];
-    }
-    else {
-        tintColor = [UIColor colorWithWhite:0.03 alpha:0.50];
-    }
-    
-    NSString *deviceTypeString = [LcAppDelegate sharedAppDelegate].deviceTypeString;
-    
-    CGFloat blurRadius;
-    if ([@[@"iPhone3,1", @"iPad3,1"] containsObject:deviceTypeString]) {
-        blurRadius = 0.0;
-    }
-    else {
-        blurRadius = 5.0;
-    }
-    
-    newBGImage = [newBGImage applyBlurWithRadius:blurRadius tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
-    
-    return newBGImage;
+    return image;
 }
 
 @end
