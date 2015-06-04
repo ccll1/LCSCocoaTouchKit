@@ -2,4 +2,96 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LCSCocoaTouchKitTests/UIImage+LCSCocoaTouchKit_Tests.m"
+            timestampString = "440022408.724673"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-setUp"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LCSCocoaTouchKitTests/UIImage+LCSCocoaTouchKit_Tests.m"
+            timestampString = "440022428.318648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-testCompareResizedImages"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UIImage_LCSCocoaTouchKit_Tests testCompareResizedImages]"
+                  moduleName = "LCSCocoaTouchKitTests"
+                  urlString = "file:///Users/christoph/LCSCocoaTouchKit/LCSCocoaTouchKitTests/UIImage+LCSCocoaTouchKit_Tests.m"
+                  timestampString = "440022705.059983"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "237">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UIImage_LCSCocoaTouchKit_Tests testCompareResizedImages]"
+                  moduleName = "LCSCocoaTouchKitTests"
+                  urlString = "file:///Users/christoph/LCSCocoaTouchKit/LCSCocoaTouchKitTests/UIImage+LCSCocoaTouchKit_Tests.m"
+                  timestampString = "440022705.060226"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "664">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UIImage_LCSCocoaTouchKit_Tests testCompareResizedImages]"
+                  moduleName = "LCSCocoaTouchKitTests"
+                  urlString = "file:///Users/christoph/LCSCocoaTouchKit/LCSCocoaTouchKitTests/UIImage+LCSCocoaTouchKit_Tests.m"
+                  timestampString = "440022705.060372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "732">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UIImage_LCSCocoaTouchKit_Tests testCompareResizedImages]"
+                  moduleName = "LCSCocoaTouchKitTests"
+                  urlString = "file:///Users/christoph/LCSCocoaTouchKit/LCSCocoaTouchKitTests/UIImage+LCSCocoaTouchKit_Tests.m"
+                  timestampString = "440022705.060511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "860">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

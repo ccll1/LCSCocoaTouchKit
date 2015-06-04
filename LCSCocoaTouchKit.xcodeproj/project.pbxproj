@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592077961A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 592077941A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		592077971A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 592077951A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.m */; };
+		5920779A1A3A3123004B4338 /* UIImage+LCSCocoaTouchKit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 592077991A3A3123004B4338 /* UIImage+LCSCocoaTouchKit_Tests.m */; };
+		592077A01A3A3175004B4338 /* Sample_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5920779E1A3A3175004B4338 /* Sample_Image.png */; };
+		592077A11A3A3278004B4338 /* UIImage+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 592077951A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.m */; };
+		592077A21A3A32B7004B4338 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 592C5E8519EA84A2005CB053 /* UIImageEffects.m */; };
+		592C5E8219EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 592C5E8019EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		592C5E8319EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 592C5E8119EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.m */; };
+		592C5E8619EA84A2005CB053 /* UIImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 592C5E8419EA84A2005CB053 /* UIImageEffects.h */; };
+		592C5E8719EA84A2005CB053 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 592C5E8519EA84A2005CB053 /* UIImageEffects.m */; };
+		59B8369B19ED8D58003417D0 /* LCSCTLabelWithShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B8369919ED8D58003417D0 /* LCSCTLabelWithShadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59B8369C19ED8D58003417D0 /* LCSCTLabelWithShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B8369A19ED8D58003417D0 /* LCSCTLabelWithShadow.m */; };
+		59BE014619EBDB5900C1E292 /* LCSCTGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BE014419EBDB5900C1E292 /* LCSCTGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59BE014719EBDB5900C1E292 /* LCSCTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BE014519EBDB5900C1E292 /* LCSCTGradient.m */; };
 		59D70CB019A37E6C0048B517 /* LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CAF19A37E6C0048B517 /* LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59D70CCF19A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CC319A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59D70CD019A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC419A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m */; };
@@ -14,8 +28,6 @@
 		59D70CD219A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC619A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m */; };
 		59D70CD319A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CC719A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59D70CD419A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC819A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m */; };
-		59D70CD519A37EA30048B517 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CC919A37EA30048B517 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59D70CD619A37EA30048B517 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */; };
 		59D70CD719A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CCB19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59D70CD819A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */; };
 		59D70CD919A37EA30048B517 /* UIView+LCSCocoaTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D70CCD19A37EA30048B517 /* UIView+LCSCocoaTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,10 +39,21 @@
 		59ED566019A486D400ED1971 /* UIColor+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CC819A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m */; };
 		59ED566119A486D400ED1971 /* UILabel+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */; };
 		59ED566219A486D400ED1971 /* UIView+LCSCocoaTouchKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCE19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m */; };
-		59ED566319A486D400ED1971 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		592077941A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
+		592077951A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
+		592077991A3A3123004B4338 /* UIImage+LCSCocoaTouchKit_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LCSCocoaTouchKit_Tests.m"; sourceTree = "<group>"; };
+		5920779E1A3A3175004B4338 /* Sample_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sample_Image.png; path = ../LCSCocoaTouchKit/Sample_Image.png; sourceTree = "<group>"; };
+		592C5E8019EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
+		592C5E8119EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
+		592C5E8419EA84A2005CB053 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		592C5E8519EA84A2005CB053 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		59B8369919ED8D58003417D0 /* LCSCTLabelWithShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSCTLabelWithShadow.h; sourceTree = "<group>"; };
+		59B8369A19ED8D58003417D0 /* LCSCTLabelWithShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSCTLabelWithShadow.m; sourceTree = "<group>"; };
+		59BE014419EBDB5900C1E292 /* LCSCTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSCTGradient.h; sourceTree = "<group>"; };
+		59BE014519EBDB5900C1E292 /* LCSCTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSCTGradient.m; sourceTree = "<group>"; };
 		59D70CAA19A37E6C0048B517 /* LCSCocoaTouchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LCSCocoaTouchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D70CAE19A37E6C0048B517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D70CAF19A37E6C0048B517 /* LCSCocoaTouchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSCocoaTouchKit.h; sourceTree = "<group>"; };
@@ -42,8 +65,6 @@
 		59D70CC619A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
 		59D70CC719A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
 		59D70CC819A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
-		59D70CC919A37EA30048B517 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		59D70CCB19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
 		59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LCSCocoaTouchKit.m"; sourceTree = "<group>"; };
 		59D70CCD19A37EA30048B517 /* UIView+LCSCocoaTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCSCocoaTouchKit.h"; sourceTree = "<group>"; };
@@ -103,8 +124,16 @@
 				59D70CCC19A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m */,
 				59D70CCD19A37EA30048B517 /* UIView+LCSCocoaTouchKit.h */,
 				59D70CCE19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m */,
-				59D70CC919A37EA30048B517 /* UIImage+ImageEffects.h */,
-				59D70CCA19A37EA30048B517 /* UIImage+ImageEffects.m */,
+				592077941A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.h */,
+				592077951A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.m */,
+				592C5E8419EA84A2005CB053 /* UIImageEffects.h */,
+				592C5E8519EA84A2005CB053 /* UIImageEffects.m */,
+				592C5E8019EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.h */,
+				592C5E8119EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.m */,
+				59B8369919ED8D58003417D0 /* LCSCTLabelWithShadow.h */,
+				59B8369A19ED8D58003417D0 /* LCSCTLabelWithShadow.m */,
+				59BE014419EBDB5900C1E292 /* LCSCTGradient.h */,
+				59BE014519EBDB5900C1E292 /* LCSCTGradient.m */,
 				59D70CAD19A37E6C0048B517 /* Supporting Files */,
 				59D70CDD19A37F610048B517 /* Frameworks */,
 			);
@@ -122,7 +151,9 @@
 		59D70CB619A37E6D0048B517 /* LCSCocoaTouchKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				5920779E1A3A3175004B4338 /* Sample_Image.png */,
 				59ED565C19A4853600ED1971 /* UIBezierPath+LCSCocoaTouchKit_Tests.m */,
+				592077991A3A3123004B4338 /* UIImage+LCSCocoaTouchKit_Tests.m */,
 				59D70CB719A37E6D0048B517 /* Supporting Files */,
 			);
 			path = LCSCocoaTouchKitTests;
@@ -154,10 +185,14 @@
 				59D70CD719A37EA30048B517 /* UILabel+LCSCocoaTouchKit.h in Headers */,
 				59D70CD919A37EA30048B517 /* UIView+LCSCocoaTouchKit.h in Headers */,
 				59D70CCF19A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.h in Headers */,
-				59D70CD519A37EA30048B517 /* UIImage+ImageEffects.h in Headers */,
 				59D70CB019A37E6C0048B517 /* LCSCocoaTouchKit.h in Headers */,
 				59D70CD319A37EA30048B517 /* UIColor+LCSCocoaTouchKit.h in Headers */,
+				592C5E8219EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.h in Headers */,
+				59B8369B19ED8D58003417D0 /* LCSCTLabelWithShadow.h in Headers */,
+				59BE014619EBDB5900C1E292 /* LCSCTGradient.h in Headers */,
 				59D70CD119A37EA30048B517 /* UIButton+LCSCocoaTouchKit.h in Headers */,
+				592077961A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.h in Headers */,
+				592C5E8619EA84A2005CB053 /* UIImageEffects.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				592077A01A3A3175004B4338 /* Sample_Image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D70CD619A37EA30048B517 /* UIImage+ImageEffects.m in Sources */,
+				59B8369C19ED8D58003417D0 /* LCSCTLabelWithShadow.m in Sources */,
 				59D70CD219A37EA30048B517 /* UIButton+LCSCocoaTouchKit.m in Sources */,
+				59BE014719EBDB5900C1E292 /* LCSCTGradient.m in Sources */,
 				59D70CD419A37EA30048B517 /* UIColor+LCSCocoaTouchKit.m in Sources */,
 				59D70CDA19A37EA30048B517 /* UIView+LCSCocoaTouchKit.m in Sources */,
+				592077971A3A2FC5004B4338 /* UIImage+LCSCocoaTouchKit.m in Sources */,
+				592C5E8719EA84A2005CB053 /* UIImageEffects.m in Sources */,
 				59D70CD019A37EA30048B517 /* UIBezierPath+LCSCocoaTouchKit.m in Sources */,
+				592C5E8319EA83B7005CB053 /* NSLayoutConstraint+LCSCocoaTouchKit.m in Sources */,
 				59D70CD819A37EA30048B517 /* UILabel+LCSCocoaTouchKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59ED566319A486D400ED1971 /* UIImage+ImageEffects.m in Sources */,
 				59ED566019A486D400ED1971 /* UIColor+LCSCocoaTouchKit.m in Sources */,
 				59ED566219A486D400ED1971 /* UIView+LCSCocoaTouchKit.m in Sources */,
 				59ED565F19A486D400ED1971 /* UIButton+LCSCocoaTouchKit.m in Sources */,
+				592077A11A3A3278004B4338 /* UIImage+LCSCocoaTouchKit.m in Sources */,
+				5920779A1A3A3123004B4338 /* UIImage+LCSCocoaTouchKit_Tests.m in Sources */,
+				592077A21A3A32B7004B4338 /* UIImageEffects.m in Sources */,
 				59ED565E19A486D400ED1971 /* UIBezierPath+LCSCocoaTouchKit.m in Sources */,
 				59ED566119A486D400ED1971 /* UILabel+LCSCocoaTouchKit.m in Sources */,
 				59ED565D19A4853600ED1971 /* UIBezierPath+LCSCocoaTouchKit_Tests.m in Sources */,

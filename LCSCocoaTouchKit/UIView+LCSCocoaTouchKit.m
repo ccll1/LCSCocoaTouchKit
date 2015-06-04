@@ -7,7 +7,7 @@
 //
 
 #import "UIView+LCSCocoaTouchKit.h"
-#import "UIImage+ImageEffects.h"
+#import "UIImageEffects.h"
 
 @implementation UIView (LCSCocoaTouchKit)
 
@@ -17,12 +17,16 @@
         return nil;
     }
     
-    UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, [[[self window] screen] scale]);
+    UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, self.window.screen.scale);
     [self drawViewHierarchyInRect:self.frame afterScreenUpdates:NO];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    image = [image applyBlurWithRadius:blurRadius tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+    image = [UIImageEffects imageByApplyingBlurToImage:image
+                                            withRadius:blurRadius
+                                             tintColor:tintColor
+                                 saturationDeltaFactor:1.8
+                                             maskImage:nil];
     
     return image;
 }

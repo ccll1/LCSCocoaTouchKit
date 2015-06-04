@@ -17,9 +17,12 @@ FOUNDATION_EXPORT const unsigned char LCSCocoaTouchKitVersionString[];
 #import "UIBezierPath+LCSCocoaTouchKit.h"
 #import "UIButton+LCSCocoaTouchKit.h"
 #import "UIColor+LCSCocoaTouchKit.h"
-#import "UIImage+ImageEffects.h"
 #import "UILabel+LCSCocoaTouchKit.h"
 #import "UIView+LCSCocoaTouchKit.h"
+#import "NSLayoutConstraint+LCSCocoaTouchKit.h"
+#import "LCSCTGradient.h"
+#import "LCSCTLabelWithShadow.h"
+#import "UIImage+LCSCocoaTouchKit.h"
 
 
 

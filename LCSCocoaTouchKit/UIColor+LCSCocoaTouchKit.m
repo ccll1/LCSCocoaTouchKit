@@ -168,10 +168,10 @@
         return NO;
     }
     
-    CGFloat red;
-    CGFloat green;
-    CGFloat blue;
-    CGFloat alpha;
+    double red;
+    double green;
+    double blue;
+    double alpha;
     
     if (![scanner scanDouble:&red]) {
         return NO;
@@ -264,10 +264,10 @@
         return NO;
     }
     
-    CGFloat hue;
-    CGFloat saturation;
-    CGFloat brightness;
-    CGFloat alpha;
+    double hue;
+    double saturation;
+    double brightness;
+    double alpha;
     
     if (![scanner scanDouble:&hue]) {
         return NO;
